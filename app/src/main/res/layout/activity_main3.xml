@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:fillViewport="true"
+    android:background="@drawable/mar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="14dp"
+        android:layout_marginTop="-45dp">
+
+        <TextView
+
+            android:id="@+id/sawal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:text="Which Bollywood movie features the popular song 'Chaiyya Chaiyya' ?"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="235dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/chaiya" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/progresstext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0/10"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/holo_purple"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/option1"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Main Hoon na"
+            android:textColor="#7C5200"
+            android:textSize="17sp"
+             />
+
+        <TextView
+            android:id="@+id/option2"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Chalte Chalte"
+            android:textColor="#7C5200"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/option3"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="DDLJ"
+            android:textColor="#7C5200"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/option4"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Dil se"
+            android:textColor="#7C5200"
+            android:textSize="17sp"
+            />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/bgButton"
+            android:padding="8dp"
+            android:text="Submit"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
